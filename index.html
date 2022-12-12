@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./public/css/app.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  You’ve used 815 GB of your storage
+  <section>
+
+    <div class="fond-fylo">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" height="90%" width="auto">
+      </div>
+      <div class="toutesimg">
+      <div class="fondimg">
+        <img src="./images/icon-document.svg" alt="" height="65%" width="auto">
+      </div>
+      <div class="fondimg">
+        <img src="./images/icon-folder.svg" alt="" height="55%" width="auto">
+      </div>
+      <div class="fondimg">
+        <img src="./images/icon-upload.svg" alt="" height="55%" width="auto">
+      </div>
+    </div>
+    </div>
+
+    <div class="fond-gb">
+      <span class="pgb">You've used <span style="font-weight: bolder;">815 GB</span> of your storage</span>
+      <p class="gb0">0 GB</p>
+      <div class="progress mt-10 transparence" style="width: 75%;">
+        <div class="progress-bar colorbar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><div style="height: 15px; width: 15px; background-color: white; border-radius: 50%; display: flex; margin-left: 95%;"></div></div>
+      </div>
+      <p class="gb1000">1000 GB</p>
+    </div>
+
+  </section>
+  <!-- You’ve used 815 GB of your storage
 
   185 GB Left
   
@@ -26,7 +64,8 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
